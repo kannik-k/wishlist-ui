@@ -1,93 +1,59 @@
-# ITI0209_2025
+# Wishlist ui project
 
+Created by Karoliina Kannik, Faina Dõmša
 
+## Brief
 
-## Getting started
+The application provides users with the ability to create and manage their personal book wish list, serving as a convenient tool to store and organize books they wish to read in the future. It is designed to help users remember interesting books, motivate them to read more, and keep their reading preferences organized and easily manageable.
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+The target audience consists of book enthusiasts who want a convenient, efficient, and simple way to keep track of books that interest them or that they have particularly enjoyed. The platform offers an easy way to manage reading wishes and helps users plan which book to read next.
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+User Profile:
+Kristiine is a 20-year-old university student living in a dormitory in Tallinn. She loves reading because it helps her escape from university stress and disconnect from the world. Kristiine often visits bookstores and takes pictures of interesting books, but she frequently forgets about them. She has also tried writing book titles in Notepad, but the information tends to get lost there as well. Her goal is to find a simple and quick way to manage her reading list so she can easily find the books she wants to read later. Kristiine prefers a solution that is smooth, simple, free from excessive features and advertisements, and allows her to quickly access everything she needs on both her phone and computer.
 
-## Add your files
+The application has no commercial purpose.
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+Features:
+- User login
+- Book display
+- Filtering books by author, title, and genre
+- Adding books to the database
+- Adding books to the wish list
+- Viewing the wish list
 
-```
-cd existing_repo
-git remote add origin https://gitlab.cs.taltech.ee/fadoms/iti0209_2025.git
-git branch -M main
-git push -uf origin main
-```
+## Sitemap
 
-## Integrate with your tools
+![image](https://github.com/user-attachments/assets/f07dae95-0d4e-4be3-84af-71fe6446c454)
 
-- [ ] [Set up project integrations](https://gitlab.cs.taltech.ee/fadoms/iti0209_2025/-/settings/integrations)
+## Flow
 
-## Collaborate with your team
+![image](https://github.com/user-attachments/assets/33e4da3b-132d-4fc8-ac5f-24dc52aef80e)
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+## Figma prototype/wireframe
 
-## Test and Deploy
+Phone view: https://www.figma.com/proto/jBygrtRQis0TTW7hQcGHf6/Read-it-Later?node-id=18-353&t=adAgPeSrewgLls0R-1
+Desktop view: https://www.figma.com/proto/jBygrtRQis0TTW7hQcGHf6/Read-it-Later?node-id=18-354&t=adAgPeSrewgLls0R-1
 
-Use the built-in continuous integration in GitLab.
+## Testing and results
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+**Tester 1**
 
-***
+- On the homepage, the company name should stand out from the rest of the text.
+- On the Pages page, instead of a dropdown menu, the menu could already be open on the right side.
+- On the Add Book page, the "image" text could be removed as the icon is sufficient.
+- Why are the icons different in mobile and desktop views?
 
-# Editing this README
+**Tester 2**
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
+- The website is well-structured, and the buttons are in logical positions.
+- In mobile view, the "didn't find the book" text is a bit too compressed with the surrounding elements.
+- In mobile view, the overall alignment is slightly off.
+- The logo on the homepage is a bit too large.
+- In mobile view, clicking the logo does not navigate to the homepage, but in desktop view, it does.
 
-## Suggestions for a good README
+**The reported issues have been fixed.**
 
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+Two issues that do not actually exist on the site but were not possible to implement in Figma:
+-The "Add book to wishlist" checkbox cannot be unchecked in the prototype, but in reality, it would be possible.
+-When opening the wishlist review view and then pressing the back button, the user is redirected to the book list view. This is because we couldn't implement backtracking in Figma. In reality, the user would be taken back to the previous page they came from.
 
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.

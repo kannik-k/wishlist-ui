@@ -31,8 +31,8 @@ Features:
 
 ## Figma prototype/wireframe
 
-Phone view: https://www.figma.com/proto/jBygrtRQis0TTW7hQcGHf6/Read-it-Later?node-id=18-353&t=adAgPeSrewgLls0R-1
-Desktop view: https://www.figma.com/proto/jBygrtRQis0TTW7hQcGHf6/Read-it-Later?node-id=18-354&t=adAgPeSrewgLls0R-1
+- Phone view: https://www.figma.com/proto/jBygrtRQis0TTW7hQcGHf6/Read-it-Later?node-id=18-353&t=adAgPeSrewgLls0R-1
+- Desktop view: https://www.figma.com/proto/jBygrtRQis0TTW7hQcGHf6/Read-it-Later?node-id=18-354&t=adAgPeSrewgLls0R-1
 
 ## Testing and results
 
